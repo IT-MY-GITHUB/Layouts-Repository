@@ -1,6 +1,6 @@
 # Layouts-Repository
 ### Repository with different layouts.
-### The project code can be found in the corresponding folders in the "gh-pages" branch.
+### In the gh-pages branch there are ready-made project files, and in the main files in development mode
 <hr/>
 
  #### Simple Layout Online TV. During development I used: Gulp, Pug, Scss
