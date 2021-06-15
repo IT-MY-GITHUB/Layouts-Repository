@@ -1,0 +1,52 @@
+---
+layout: default
+title: Profile
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<form action="/" class="form" method="POST">
+  <div class="cabinet">
+    <div class="cabinet__form">
+      <div class="form__group form__group--md">
+        <input type="text" class="form__control placeholder="Ваше Имя"
+        value="Oleg Kolpakov">
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input type=email" class="form__control placeholder="Ваш Email"
+        value="stivem666@gmail.com">
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input
+          type="password"
+          class="form__control"
+          placeholder="Новый пароль"
+        />
+        <span class="form__line"></span>
+      </div>
+      <div class="form__group form__group--md">
+        <input
+          type="password"
+          class="form__control"
+          placeholder="Подтвердите пароль"
+        />
+        <span class="form__line"></span>
+      </div>
+    </div>
+    <div class="cabinet__avatar">
+      <img src="assets/images/avatar.jpg" alt="avatar" />
+      <label class="cabinet__file">
+        <input type="file" />
+        выбрать аватар
+      </label>
+    </div>
+  </div>
+
+  <div class="form__footer">
+    <button type="submit" class="btn btn--blue btn--rounded btn--small">
+      Сохранить
+    </button>
+  </div>
+</form>

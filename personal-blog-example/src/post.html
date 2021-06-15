@@ -1,0 +1,191 @@
+---
+layout: default
+title: Post
+---
+
+<article class="post">
+  <!-- start .post -->
+  <div class="post__actions">
+    <a href="index.html">вернуться назад</a>
+    <a href="#">
+      поделиться
+      <img
+        class="post__actions-icon"
+        src="assets/images/share.svg"
+        alt="поделиться"
+      />
+    </a>
+  </div>
+  <div class="post__header post__header--open">
+    <h1 class="post__title post__title--mb0">
+      Как я сходил на FrontEnd Conf 2021
+    </h1>
+    <ul class="post__data">
+      <li class="post__data-item">
+        <time datetime="2021.06.08 19:50">08.06.2021</time>
+      </li>
+      <li class="post__data-item">
+        <a href="#">конференции</a>
+      </li>
+    </ul>
+  </div>
+  <div class="post__content">
+    <div class="post__text">
+      <h2>Title h2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+        incidunt fuga fugiat alias et cumque! Mollitia odio unde maxime quaerat
+        sunt obcaecati numquam cumque quisquam temporibus fuga? Hic, aspernatur
+        autem?
+      </p>
+
+      <h3>Title h3</h3>
+      <p>
+        Lorem <a href="#">ipsum dolor sit</a> amet consectetur adipisicing elit.
+        Consectetur, incidunt fuga fugiat alias et cumque! Mollitia odio unde
+        maxime quaerat sunt obcaecati numquam cumque quisquam temporibus fuga?
+        Hic, aspernatur autem?
+      </p>
+
+      <h4>Title h4</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+        incidunt fuga fugiat alias et cumque! Mollitia odio unde maxime quaerat
+        sunt obcaecati numquam cumque quisquam temporibus fuga? Hic, aspernatur
+        autem?
+      </p>
+      <p>
+        <img src="assets/images/image.jpg" alt="post image" />
+      </p>
+    </div>
+    <!-- end .post__text-->
+    <div class="related">
+      <h3 class="post__subtitle">Интересно почитать</h3>
+      <ul class="related__list">
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+          </h4>
+          <time class="related__list-date" datetime="2021-06-05 15:41"
+            >05.06.2021</time
+          >
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как писать код быстро и безболезненно</a>
+          </h4>
+          <time class="related__list-date" datetime="2021-06-01 12:00"
+            >01.06.2021</time
+          >
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+          </h4>
+          <time class="related__list-date" datetime="2021-05-28 18:30"
+            >28.05.2021</time
+          >
+        </li>
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+          </h4>
+          <time class="related__list-date" datetime="2021-05-28 18:30"
+            >25.05.2021</time
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- end .related -->
+
+    <h3 class="post__subtitle">Обсуждение</h3>
+    <form action="/" method="POST" class="form">
+      <div class="form__group">
+        <textarea
+          class="form__control form__control--textarea"
+          name="comment-text"
+          placeholder="Текст комментария"
+        >
+        </textarea>
+        <span class="form__line"></span>
+      </div>
+      <button class="btn btn--blue btn--rounded btn--small" type="text">
+        Отправить
+      </button>
+    </form>
+
+    <ul class="comments">
+      <li class="comments__item">
+        <div class="comments__header">
+          <img
+            class="comments__avatar"
+            src="assets/images/avatar.jpg"
+            alt="avatar"
+          />
+          <div class="comments__author">
+            <div class="comments__name">Oleg Kolpakov</div>
+            <time class="comments__pubdate" datetime="2021-06-02 19:10"
+              >1 неделю назад</time
+            >
+          </div>
+        </div>
+        <div class="comments__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          mollitia incidunt amet ut harum doloremque, cum labore repellendus
+          quis atque repudiandae, aut in! Et at accusamus necessitatibus earum,
+          tempore voluptatem?
+        </div>
+        <button class="comments__reply">Ответить</button>
+
+        <ul class="comments">
+          <li class="comments__item">
+            <div class="comments__header">
+              <img
+                class="comments__avatar"
+                src="https://place-hold.it/300"
+                alt="avatar"
+              />
+              <div class="comments__author">
+                <div class="comments__name">Oleg Kolpakov</div>
+                <time class="comments__pubdate" datetime="2021-06-02 19:10"
+                  >1 неделю назад</time
+                >
+              </div>
+            </div>
+            <div class="comments__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              mollitia incidunt amet ut harum doloremque, cum labore repellendus
+              quis atque repudiandae, aut in! Et at accusamus necessitatibus
+              earum, tempore voluptatem?
+            </div>
+            <button class="comments__reply">Ответить</button>
+          </li>
+        </ul>
+      </li>
+      <li class="comments__item">
+        <div class="comments__header">
+          <img
+            class="comments__avatar"
+            src="assets/images/avatar.jpg"
+            alt="avatar"
+          />
+          <div class="comments__author">
+            <div class="comments__name">Oleg Kolpakov</div>
+            <time class="comments__pubdate" datetime="2021-06-02 19:10"
+              >1 неделю назад</time
+            >
+          </div>
+        </div>
+        <div class="comments__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          mollitia incidunt amet ut harum doloremque, cum labore repellendus
+          quis atque repudiandae, aut in! Et at accusamus necessitatibus earum,
+          tempore voluptatem?
+        </div>
+        <button class="comments__reply">Ответить</button>
+      </li>
+    </ul>
+  </div>
+  <!-- end .post__content-->
+</article>
+<!-- end .post -->

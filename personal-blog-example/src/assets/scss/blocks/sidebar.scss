@@ -1,0 +1,125 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index-sidebar;
+  width: $sidebar-width;
+  height: 100vh;
+  background-color: $primaryGray;
+  box-shadow: 5px 0 15px rgba(#050505, 0.1);
+  // media
+  @include breakpoint($tablet) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    transform: translateX(-100%);
+    transition: all ease 0.5s;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    // делаем скрол возможным для сйдбара в режиме перевернутого телефона
+    overflow: auto;
+    .show-sidebar & {
+      transform: translateX(0);
+    }
+  }
+  &__header {
+    height: 18rem;
+    background-color: $secondaryBlack;
+    @include breakpoint($tablet) {
+      height: 10rem;
+    }
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    padding: 0 2rem;
+    @include breakpoint($tablet) {
+      flex-grow: 1;
+    }
+    & .profile {
+      margin-top: -5rem;
+      @include breakpoint($tablet) {
+          margin-top: -1.25rem;
+          position: relative;
+          border-bottom: 1px solid #1c1c1c;
+        }
+      &__header {
+        margin-bottom: 2rem;
+        text-align: center;
+        @include breakpoint($tablet) {
+          text-align: left;
+          padding-left: 8rem;
+          padding-top: 2rem;
+        }
+      }
+      &__avatar {
+        display: block;
+        margin: 0 auto 2rem;
+        height: 10rem;
+        width: 10rem;
+        border: 2px solid $white;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 7px 20px rgba(#000, 0.25);
+        position: relative;
+        @include breakpoint($tablet) {
+          height: 6.5rem;
+          width: 6.5rem;
+          margin-left: 0;
+          position: absolute;
+          left: 0;
+        }
+      }
+      &__name {
+        font-size: 1.8rem;
+        font-weight: 500;
+        @include breakpoint($tablet) {
+          font-size: 1.5rem;
+        }
+      }
+      &__prof {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #d2d2d2;
+        @include breakpoint($tablet) {
+          font-size: 1.2rem;
+        }
+      }
+      & .social {
+        display: flex;
+        justify-content: center;
+        @include breakpoint($tablet) {
+          display: none;
+        }
+        &__item {
+          margin: 0 0.75rem;
+        }
+      }
+      &__text {
+        padding: 3rem 0;
+        margin: 3rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        border-top: 1px solid #1c1c1c;
+        border-bottom: 1px solid #1c1c1c;
+        @include breakpoint($tablet) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    & a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

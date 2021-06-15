@@ -1,0 +1,31 @@
+.related {
+  border-bottom: 1px solid #1c1c1c;
+  padding-bottom: 0.5rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+      flex: 0 0 50%;
+      margin-bottom: 2.5rem;
+    }
+    &-title {
+      font-size: 1.4ere;
+      color: #f3eba2;
+      font-weight: 500;
+
+      // показывает точки при скрытии контекта который вылезает за пределы блока
+      text-overflow: ellipsis;
+      // скрываем то что залезает за пределы этого блока
+      overflow: hidden;
+      // запрещаем перенос текста на новую строку
+      white-space: nowrap;
+      & a {
+        color: inherit;
+      }
+    }
+    &-date {
+      font-size: 1.2rem;
+      color: #828282;
+    }
+  }
+}
