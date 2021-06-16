@@ -14,8 +14,8 @@
     
     <title>Main</title>
   </head>
-  <body class="show-sidebar">
-    <div class="page">
+  <body>
+    <div id="page" class="page">
       <!-- header -->
       <header class="header">
         <div class="header__left">
@@ -48,7 +48,7 @@
             </ul>
           </nav>
       
-          <button class="burger" type="button">
+          <button id="burger" class="burger" type="button">
             <span>Навигация</span>
           </button>
         </div>
@@ -71,7 +71,7 @@
         </div>
       </header>
       <!-- sidebar -->
-      <aside class="sidebar">
+      <aside id="sidebar" class="sidebar">
         <div class="sidebar__header">
           <img src="assets/images/sidebar__header.jpg" alt="img" />
         </div>
@@ -104,9 +104,8 @@
       
             <div class="profile__text">
               <p>
-                Front-end разработчик. Созданием сайтов
-                занимаюсь с 2020 года. Наработал
-                более 2000 часов в создании сайтов различной сложности.
+                Front-end разработчик. Созданием сайтов занимаюсь с 2020 года.
+                Наработал более 1000 часов в создании сайтов различной сложности.
               </p>
             </div>
           </div>
@@ -136,19 +135,27 @@
               <li class="nav__item">
                 <a href="text.html" class="nav__link">Реклама</a>
               </li>
+              <li class="nav__item">
+                <a href="profile.html" class="nav__link">Профиль</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Выйти</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="sidebar__footer">
           <a class="btn btn--red" href="works.html">Мои работы</a>
-          <button class="btn btn--blue">Написать мне</button>
+          <button class="btn btn--blue" data-modal="contactModal">
+            Написать мне
+          </button>
         </div>
       </aside>
       <!-- Main -->
       <main class="main">
         <div class="container">
-<div class="stories"><!-- start .stories -->
-  <div class="stories__item">
+<div class="stories">
+  <div class="stories__item" data-modal="storyModal">
     <img class="stories__preview" src="assets/images/stories/story-1.jpg" alt="image">
     <div class="stories__title">Отдыхаю на природе</div>
     <time datetime="2021-06-08" class="stories__date">08.06.2021</time>
@@ -170,9 +177,9 @@
   </div>
 </div><!-- end .stories -->
 
-<div class="add-post"><!-- start .add-post -->
+<div class="add-post">
   <form action="/" method="POST" class="add-post__form">
-    <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+    <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь" data-resize></textarea>
     <div class="add-post__actions">
       <label class="add-post__file" for="add-post-file">
         <input type="file" id="add-post-file">
@@ -182,9 +189,9 @@
       </button>
     </div>
   </form>
-</div><!-- end .add-post -->
+</div>
 
-<div class="post"><!-- start .post -->
+<div class="post">
   <div class="post__content">
     <p class="post__description">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem at, nostrum tempora vero esse minus dicta laudantium, aliquid cum adipisci quae voluptatem consequuntur facere quos doloribus veniam nulla aspernatur mollitia!
@@ -197,9 +204,9 @@
       </li>
     </ul>
   </div>
-</div><!-- end .post -->
+</div>
 
-<article class="post"><!-- start article .post -->
+<article class="post">
   <div class="post__header post__header--preview">
     <a href="post.html">
       <img class="post__image" src="assets/images/post-2.jpg" alt="Как писать код быстро и безболезненно?">
@@ -207,7 +214,7 @@
   </div>
   <div class="post__content">
     <h2 class="post__title">
-      <a href="post.html">Как писать код быстро и безболезненно?</a>
+      <a href="post.html">Полезные инструменты разработчика</a>
     </h2>
     <p class="post__description">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem at, nostrum tempora vero esse minus dicta laudantium, aliquid cum adipisci quae voluptatem consequuntur facere quos doloribus veniam nulla aspernatur mollitia!
@@ -224,9 +231,9 @@
     </ul>
     <a href="post.html" class="post__read">читать</a>
   </div>
-</article><!-- end article .post -->
+</article>
 
-<article class="post"><!-- start article .post -->
+<article class="post">
   <div class="post__header">
     <div class="embed">
       <iframe src="https://place-hold.it/420x580" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -234,7 +241,7 @@
   </div>
   <div class="post__content">
     <h2 class="post__title">
-      <a href="post.html">Купил новый ноутбук за 150 000 руб</a>
+      <a href="post.html">Купил новый ноутбук за 3000 руб</a>
     </h2>
   </div>
   <div class="post__footer">
@@ -248,9 +255,9 @@
     </ul>
     <a href="#" class="post__read">оставить комментарий</a>
   </div>
-</article><!-- end article .post -->
+</article>
 
-<article class="post"><!-- start article .post -->
+<article class="post">
   <div class="post__header post__header--preview">
     <a href="post.html">
       <img class="post__image" src="assets/images/post-3.jpg" alt="Как я сходил на FrontEnd Conf 2021">
@@ -275,9 +282,9 @@
     </ul>
     <a href="post.html" class="post__read">читать</a>
   </div>
-</article><!-- end article .post -->
+</article>
 
-<ul class="pagination"><!-- start .pagination -->
+<ul class="pagination">
   <li class="pagination__item">
     <a href="#" class="pagination__link">
       &lt;
@@ -310,7 +317,7 @@
       </main>
     </div>
 
-    <!-- <div class="modal" id="contactModal">
+    <div class="modal" id="contactModal">
   <div class="modal__content modal__content--contact">
     <button class="modal__close">
       <img src="assets/images/close.svg" alt="close" />
@@ -358,18 +365,13 @@
 
     <ul class="modal__footer">
       <li>
-        Email:
-        <a href="mailto:stivem666@gmail.com">stivem666@gmail.com</a>
+        Email:<br /><a href="mailto:stivem666@gmail.com">stivem666@gmail.com</a>
       </li>
-      <li>
-        Phone:
-        <a href="tel:+375298594443">+375 29 859-44-43</a>
-      </li>
+      <li>Phone:<br /><a href="tel:+375298594443">+375(29)859-44-43</a></li>
     </ul>
   </div>
 </div>
- -->
-    <!-- <div class="modal" id="shareModal">
+ <div class="modal" id="shareModal">
   <div class="modal__content">
     <button class="modal__close">
       <img src="assets/images/close.svg" alt="close" />
@@ -398,14 +400,14 @@
     </ul>
   </div>
 </div>
- -->
-    <div class="modal" id="storyModal">
-      <video
-        class="modal__video"
-        poster="https://place-hold.it/420x580"
-        src=""
-      ></video>
-    </div>
+ <div class="modal" id="storyModal">
+  <video
+    class="modal__video"
+    poster="https://place-hold.it/420x580"
+    src=""
+  ></video>
+</div>
+
 
     <script src="assets/js/app.js"></script>
   </body>
