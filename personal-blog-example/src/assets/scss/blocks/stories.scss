@@ -4,6 +4,10 @@
   grid-column-gap: 15px;
   grid-template-rows: 195px;
   margin-bottom: 3rem;
+  @include breakpoint($mobile) {
+    grid-template-columns: 137px 137px 137px 137px;
+    overflow: auto;
+  }
   &__item {
     border-radius: 5px;
     overflow: hidden;

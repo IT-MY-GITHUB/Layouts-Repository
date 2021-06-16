@@ -7,7 +7,7 @@ title: Post
   <!-- start .post -->
   <div class="post__actions">
     <a href="index.html">вернуться назад</a>
-    <a href="#">
+    <a href="#" data-modal="shareModal">
       поделиться
       <img
         class="post__actions-icon"
@@ -72,7 +72,7 @@ title: Post
         </li>
         <li class="related__list-item">
           <h4 class="related__list-title">
-            <a href="#">Как писать код быстро и безболезненно</a>
+            <a href="#">Полезные инструменты разработчика</a>
           </h4>
           <time class="related__list-date" datetime="2021-06-01 12:00"
             >01.06.2021</time
@@ -80,7 +80,7 @@ title: Post
         </li>
         <li class="related__list-item">
           <h4 class="related__list-title">
-            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+            <a href="#">Купил новый монитор за 1000 руб</a>
           </h4>
           <time class="related__list-date" datetime="2021-05-28 18:30"
             >28.05.2021</time
@@ -88,7 +88,7 @@ title: Post
         </li>
         <li class="related__list-item">
           <h4 class="related__list-title">
-            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+            <a href="#">Купил новый ноутбук за 3000 руб</a>
           </h4>
           <time class="related__list-date" datetime="2021-05-28 18:30"
             >25.05.2021</time
@@ -105,6 +105,7 @@ title: Post
           class="form__control form__control--textarea"
           name="comment-text"
           placeholder="Текст комментария"
+          data-resize
         >
         </textarea>
         <span class="form__line"></span>

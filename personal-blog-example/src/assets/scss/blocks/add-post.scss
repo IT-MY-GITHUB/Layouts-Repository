@@ -4,15 +4,17 @@
   box-shadow: 0 15px 25px rgba($black, 0.45);
   border-radius: 5px;
   padding: 1.5rem 2rem;
+  @include breakpoint($mobile) {
+    padding: 1.5rem;
+  }
   &__form {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
   &__textarea {
     display: block;
     flex-grow: 1;
-    // width: 75%;
-    height: 25px;
+    height: 34px;
     border: none;
     background: transparent;
     font-family: inherit;
@@ -33,6 +35,10 @@
     cursor: pointer;
     border: none;
     transition: all ease 0.5s;
+    @include breakpoint($mobile) {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
   }
   &__file {
     background: #ebebeb url("../images/add-photo.svg") center no-repeat;
@@ -52,8 +58,10 @@
   &__actions {
     width: 120px;
     flex-shrink: 0;
-    // width: 25%;
     display: flex;
     justify-content: space-around;
+    @include breakpoint($mobile) {
+      width: 9rem;
+    }
   }
 }

@@ -152,5 +152,11 @@
     &::placeholder {
       color: rgba($white, 0.4);
     }
+    @include breakpoint($tablet) {
+      height: 4rem;
+      font-size: 1.6rem;
+      padding-top: 0.95rem;
+      padding-bottom: 0.95rem;
+    }
   }
 }

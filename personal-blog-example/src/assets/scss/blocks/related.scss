@@ -4,6 +4,9 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
     &-item {
       flex: 0 0 50%;
       margin-bottom: 2.5rem;

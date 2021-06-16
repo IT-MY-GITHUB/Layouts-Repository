@@ -1,5 +1,4 @@
 .modal {
-  // display: flex;
   display: none;
   justify-content: center;
   flex-direction: column;
@@ -22,6 +21,9 @@
       }
     }
   }
+  &.show {
+    display: flex;
+  }
   &__content {
     position: relative;
     width: 100%;
@@ -29,6 +31,11 @@
     padding: 8rem;
     background-color: $primaryGray;
     border-radius: 5px;
+    transform: translateY(-50px);
+    transition: all 0.3s ease-in-out;
+    @include breakpoint($tablet) {
+      padding: 5rem 2rem 2rem;
+    }
     &--contact {
       padding-bottom: 2.5rem;
     }
