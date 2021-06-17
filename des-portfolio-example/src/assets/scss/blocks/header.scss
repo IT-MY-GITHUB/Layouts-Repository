@@ -34,18 +34,42 @@
 
 .nav {
   display: flex;
+  height: 100%;
+  align-items: center;
   &__link {
     color: $black;
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-    padding: 1rem 3rem;
-    border: 2px solid transparent;
-    border-radius: 2rem;
-    transition: all 0.3s ease;
-    &:hover,.active {
-      border-color: $black;
+    margin-left: 2rem;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0.2rem;
+      background-color: $black;
+      position: absolute;
+      bottom: 3;
+      left: 0;
+      transition: all ease 0.3s;
+      z-index: 1;
+    }
+    &:hover:not(:last-child) {
+      &:after {
+        width: 100%;
+      }
+    }
+    &--btn {
+      padding: 1rem 3rem;
+      border: 2px solid $black;
+      border-radius: 2rem;
+      transition: all ease 0.3s;
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
     }
   }
 }

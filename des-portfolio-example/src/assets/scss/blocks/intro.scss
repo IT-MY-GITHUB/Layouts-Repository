@@ -1,0 +1,48 @@
+.intro {
+  &__wrapper {
+    display: flex;
+    border-bottom: 1px solid #efefef;
+    background: url('../images/symbols.png') left 100% no-repeat;
+    position: relative;
+  }
+  &__content {
+    width: 50%;
+    padding-top: 9rem;
+    padding-bottom: 12rem;
+  }
+  &__photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 0.5rem;
+  }
+  &__subtitle {
+    font-size: 3.2rem;
+    font-weight: 200;
+    color: $black;
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: lighten($black, 30%);
+    margin-bottom: 2.5rem; 
+  }
+}
+
+.social {
+  display: flex;
+  margin-bottom: 4.2rem;
+  &__link {
+    margin-right: 1rem;
+    transition: all ease 0.3s;
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+}

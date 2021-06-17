@@ -20,14 +20,16 @@ body {
     box-sizing: border-box;
 }
 
-// a {
-//     text-decoration: none;
-//     &:hover {
-//         text-decoration: underline;
-//     }
-// }
+a {
+    text-decoration: none;
+    // &:hover {
+    //     text-decoration: underline;
+    // }
+}
 
 /* Blocks */
 @import 'blocks/container';
+@import 'blocks/btn';
 @import 'blocks/header';
+@import 'blocks/intro';
 @import 'blocks/footer';
