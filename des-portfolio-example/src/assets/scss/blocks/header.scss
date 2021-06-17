@@ -1,0 +1,51 @@
+.header {
+  margin-top: 1.8rem;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.user {
+  display: flex;
+  &__avatar {
+    width: 5.7rem;
+    height: 5.7rem;
+    & img {
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $black;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+  }
+  &__prof {
+    font-size: 1.2rem;
+    color: rgba($black,0.7);
+  }
+  &__content {
+    padding-left: 0.9rem;
+  }
+}
+
+.nav {
+  display: flex;
+  &__link {
+    color: $black;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    &:hover,.active {
+      border-color: $black;
+    }
+  }
+}
