@@ -1,0 +1,41 @@
+.about {
+  margin-bottom: 10rem;
+  &__wrapper {
+    display: flex;
+    max-width: 1090px;
+  }
+  &__photo {
+    width: 50%;
+    & img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__content {
+    width: 50%;
+    padding-left: 4.5rem;
+    padding-top: 2rem;
+  }
+  &__title {
+    font-size: 4.5rem;
+    color: $black;
+    font-weight: 700;
+  }
+  &__bigtitle {
+    font-size: 9.2rem;
+    font-weight: 700;
+    color: rgba($black,0.15);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    position: relative;
+    left: -10px;
+  }
+  &__text {
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: $gray;
+    font-weight: 300;
+  }
+}
