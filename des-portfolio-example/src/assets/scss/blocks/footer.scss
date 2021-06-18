@@ -1,0 +1,47 @@
+.footer {
+  background-color: $black;
+  padding: 1.5rem 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    &-link {
+      color: #bbbbcc;
+      font-size: 1.4rem;
+      &:hover:not(:last-child) {
+        text-decoration: underline;
+      }
+      &.btn {
+        border: 1px solid $gray-light;
+        padding: 1.1rem 2.6rem;
+        line-height: 1.1;
+        &:hover {
+          background-color: #fff;
+          color: $black;
+          box-shadow: 2px 2px 10px rgba(#fff,24%);
+        }
+      }
+    }
+  }
+  &__credits {
+    display: flex;
+    align-items: center;
+  }
+  &__copyright {
+    font-size: 1.4rem;
+    color: #bbbbcc;
+    border-right: 1px solid $gray;
+    padding-right: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    column-gap: 1.7rem;
+  }
+}
