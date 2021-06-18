@@ -19,12 +19,14 @@
   }
   &__title {
     font-size: 4.5rem;
+    text-transform: uppercase;
     color: $black;
     font-weight: 700;
   }
   &__bigtitle {
     font-size: 9.2rem;
     font-weight: 700;
+    text-transform: uppercase;
     color: rgba($black,0.15);
     line-height: 1.1;
     margin-bottom: 2rem;
