@@ -20,6 +20,10 @@ body {
     box-sizing: border-box;
 }
 
+p {
+    margin: 0 0 1rem;
+}
+
 a {
     text-decoration: none;
     // &:hover {
@@ -34,4 +38,5 @@ a {
 @import 'blocks/intro';
 @import 'blocks/works';
 @import 'blocks/about';
+@import 'blocks/reviews';
 @import 'blocks/footer';
