@@ -1,0 +1,107 @@
+.modal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba($black, 0.9);
+  overflow: auto;
+  &__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+  }
+  &__close {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    z-index: 1;
+    width: 34px;
+    height: 39px;
+    padding: 0;
+    background: none;
+    border: none;
+    transition: all ease 0.5s;
+    &:hover {
+      transform: rotateY(180deg);
+    }
+  }
+  &-project {
+    display: flex;
+    &__preview {
+      position: relative;
+      width: 65%;
+      overflow: hidden;
+    }
+    &__photo {
+      // выровняем идеально по центру нашу фотку
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: translate3d(-50%, -50%, 0);
+    }
+    &__content {
+      width: 35%;
+      padding: 5rem 10rem 1.5rem 2.5rem;
+      position: relative;
+    }
+    &__title {
+      font-size: 3.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $black;
+    }
+    &__info {
+      font-size: 1.8rem;
+      color: $gray;
+      text-transform: uppercase;
+    }
+    &__client {
+      margin: 3.3rem 0;
+      font-size: 1.4rem;
+      font-style: italic;
+      &::first-line {
+        font-size: 1.6rem;
+        font-weight: 700;
+        font-style: normal;
+      }
+    }
+    &__text {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: $gray;
+      line-height: 2.4;
+      margin-bottom: 13rem;
+    }
+    &__footer {
+      display: flex;
+      width: 100%;
+      padding: 0 1.6rem 2.7rem;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &__btn {
+      font-size: 1.4rem;
+      color: $black;
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: inherit;
+      cursor: pointer;
+      &--prev {
+      }
+      &--next {
+      }
+    }
+  }
+}

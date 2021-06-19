@@ -8,10 +8,13 @@ html {
 
 body {
     background-color: $white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
     color: $black;
     line-height: 1.5;
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 *,
@@ -32,12 +35,13 @@ a {
 }
 
 /* Blocks */
-@import 'blocks/container';
-@import 'blocks/btn';
-@import 'blocks/header';
-@import 'blocks/intro';
-@import 'blocks/works';
-@import 'blocks/about';
-@import 'blocks/reviews';
-@import 'blocks/news';
-@import 'blocks/footer';
+@import "blocks/container";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/works";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/modal";
+@import "blocks/footer";
