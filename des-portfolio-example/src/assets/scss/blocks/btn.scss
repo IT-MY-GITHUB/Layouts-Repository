@@ -22,7 +22,7 @@
   &:hover {
     background-color: $black;
     color: $white;
-    box-shadow: 2px 2px 10px rgba(#000,24%);
+    box-shadow: 2px 2px 10px rgba(#000, 24%);
     border-color: $black;
   }
   + .btn {
@@ -33,5 +33,13 @@
     font-weight: 700;
     border-width: 2px;
     padding: 1.1rem 1.9rem;
+  }
+  &--thin {
+    min-width: 14.5rem;
+    font-size: 1.2rem;
+  }
+  &--wrapper-center {
+    text-align: center;
+    margin-bottom: 6.68rem;
   }
 }
